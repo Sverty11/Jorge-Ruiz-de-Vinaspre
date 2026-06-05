@@ -16,6 +16,7 @@ El objetivo principal es implementar y evaluar la eficacia de las PINNs para res
 ### [Avance 2] - Planteamiendo sistema de 4 grados de libertad
 * **Cambio de Contexto operacional**: Se plantea un sistema de estructura de edificio de 4 pisos a resolver ante forzamiento oscilatorio.
 * **Cambio de arquitectura**: Se implementan redes SIREN con optimizador SOAP para solventar no-convergencia de arquitectura Tanh con optimizador ADAM
+* **Modelo entrenado**: Se añadió el archivo con los pesos para la última versión del modelo SIREN.
 
 ---
 
