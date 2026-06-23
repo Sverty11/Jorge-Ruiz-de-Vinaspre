@@ -3,7 +3,7 @@
 Este branch contiene la implementación y el estudio de **Redes Neuronales Informadas por la Física (PINNs)** para la resolución de ecuaciones diferenciales, tomando como base fundamental el trabajo de **M. Raissi, et al.**. El proyecto se desarrolla para el ramo Física computacional, bajo la tutela de Dr. Ariel Norambuena y Dr. Nicolás Viaux.
 
 ## 🎯 Objetivo del Proyecto
-El objetivo principal es implementar y evaluar la eficacia de las PINNs para resolver problemas de valores iniciales y de contorno, comparando arquitecturas de **tiempo continuo** y **tiempo discreto**. Se busca automatizar la resolución de ecuaciones como el oscilador armónico simple, optimizando la convergencia mediante técnicas avanzadas de optimización.
+El objetivo principal es implementar y evaluar la eficacia de las PINNs para resolver ecuaciones diferenciales. El proyecto se enfoca en el desarrollo de un sistema "perfil estructural" oscilatorio de 4 grados de libertad. Se documenta la transición de funciones de activación tipo Tanh() a arquitecturas tipo Fourier Encoding y SIREN, también pasando del optimizador de primer orden Adam a uno de segundo orden SOAP.
 
 ---
 
@@ -18,10 +18,14 @@ El objetivo principal es implementar y evaluar la eficacia de las PINNs para res
 * **Cambio de arquitectura**: Se implementan redes SIREN con optimizador SOAP para solventar no-convergencia de arquitectura Tanh con optimizador ADAM
 * **Modelo entrenado**: Se añadió el archivo con los pesos para la última versión del modelo SIREN.
 
+### [Avance 3] - Expansión de análisis de resultados
+* **Finalización de informe**: Se añaden análisis a mayor profundidad de los resultados finales obtenidos durante el proyecto.
+* **Códigos de análisis**: Se incluyen códigos utilizados para llevar a cabo dichas correcciones, se utiliza el modelo cuyos pesos están subidos en el **Avance 2** (https://github.com/Sverty11/Jorge-Ruiz-de-Vinaspre/blob/proyecto_final/Avance%202/modelo_siren_4dof.pth)
+
 ---
 
 ## 🛠️ Requisitos del Entorno
-Para ejecutar los notebooks en este repositorio (`PINNs Avance 1.ipynb`), se recomienda un entorno con:
+Para ejecutar los notebooks en este repositorio se recomienda un entorno con:
 * **Python 3.11+**
 * **PyTorch**: Manejo de tensores y diferenciación automática.
 * **NumPy y Matplotlib**: Procesamiento numérico y visualización de MSE.
